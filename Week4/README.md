@@ -47,4 +47,22 @@ Dynamic membership would be preferable in larger organisations where users frequ
 Question 5:
 Group membership was verified by navigating to Microsoft Entra ID → Groups, opening a security group, and reviewing the Members tab. This verification step ensures that the correct users are assigned to each group and confirms that no user belongs to multiple groups. A screenshot of a group’s members list was captured as evidence.
 
+Question 6:
 
+The Contributor role was assigned to the proj-orion-dev group because members of the development team require the ability to create, modify, and manage Azure resources such as virtual machines, storage accounts, and networking components. This role supports the development lifecycle while preventing access to role assignments, maintaining security boundaries.
+
+The Reader role was assigned to the proj-orion-ops group to allow the operations team to view Azure resources for monitoring, troubleshooting, and auditing purposes without granting permission to make configuration changes. This helps reduce the risk of accidental or unauthorised modifications to production resources.
+
+The proj-orion-finance group was intended to receive the Billing account reader role at the billing scope. This role provides read-only access to cost and billing information without exposing infrastructure resources or configuration settings. Due to limitations of the personal Azure subscription used for this project, group-based role assignment at the billing scope was not available. In an enterprise environment, this role would be assigned to the finance group by a billing administrator.
+
+Question 7:
+
+Roles for this project were assigned at the Subscription scope. Assigning roles at this level ensures that permissions apply consistently across all resources within the subscription and simplifies access management.
+
+Assigning roles at a broader scope, such as a Management Group, could result in excessive permissions being granted beyond what is required for the project. Conversely, assigning roles at narrower scopes, such as Resource Groups or individual resources, would increase administrative complexity and make access management more difficult to maintain. Subscription-level scope provides a balanced approach between security, visibility, and manageability for a project-based environment.
+
+Question 8
+
+Azure built-in roles provide predefined sets of permissions designed to cover common operational responsibilities, such as Contributor and Reader. Built-in roles are generally preferred because they are maintained by Microsoft and reduce the complexity of access management.
+
+A custom role is a role created by an organisation to define a specific set of permissions that are not fully met by built-in roles. An organisation may need to create a custom role when built-in roles grant too many permissions or when strict regulatory, compliance, or operational requirements demand more precise access control. While custom roles offer greater flexibility, they also require additional management and ongoing maintenance.
