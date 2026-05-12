@@ -1,4 +1,4 @@
-Task 1: Cloud Platform Selection
+<img width="692" height="245" alt="image" src="https://github.com/user-attachments/assets/2ee54679-6619-40a4-9d7d-f82f1aeb9dcb" />Task 1: Cloud Platform Selection
 
 Microsoft Azure was selected as the cloud platform for this practical because it provides robust virtual networking features such as Virtual Networks (VNets), subnets, and Network Security Groups (NSGs). Azure is widely used in enterprise environments and aligns with the learning objectives of the NET731 module.
 
@@ -16,4 +16,9 @@ Three subnets were created within the virtual network to logically separate netw
 Task 4: IP Addressing Validation
 
 The IP addressing scheme was reviewed to ensure correctness and consistency. All subnet address ranges fall within the virtual network address space of 10.10.0.0/16. Each subnet uses a unique /24 CIDR block, ensuring there is no overlap between subnets. This design supports efficient network segmentation while allowing sufficient IP capacity and scalability for future expansion.
+
+
+Task 5: Network Security Groups
+
+Network Security Groups (NSGs) were created to control network traffic within the virtual network. Three NSGs were provisioned: Frontend-NSG, Backend-NSG, and Database-NSG. Each NSG is intended to be associated with its respective subnet in order to enforce security controls based on the role of the network segment. Security rules are configured in subsequent tasks
 
