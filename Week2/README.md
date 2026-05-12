@@ -22,3 +22,11 @@ Task 5: Network Security Groups
 
 Network Security Groups (NSGs) were created to control network traffic within the virtual network. Three NSGs were provisioned: Frontend-NSG, Backend-NSG, and Database-NSG. Each NSG is intended to be associated with its respective subnet in order to enforce security controls based on the role of the network segment. Security rules are configured in subsequent tasks
 
+
+Task 6: Requirements and Constraints
+
+The cloud solution was implemented using Microsoft Azure, which was clearly selected and justified in Task 1. All IP addressing makes use of private IPv4 address ranges as defined in RFC 1918, with the virtual network using the 10.10.0.0/16 address space. Subnets are named descriptively based on their function, including Frontend-Subnet, Backend-Subnet, and Database-Subnet, to ensure clarity and ease of management.
+
+Network Security Group rules are documented with justification to explain how traffic is controlled between network segments. All deployed Azure resources remain active and accessible for assessment purposes. The GitHub repository containing the documentation is publicly accessible or shared with the lecturer prior to the submission deadline, in compliance with the module requirements.
+
+
