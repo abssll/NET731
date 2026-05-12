@@ -1,7 +1,7 @@
 Task 1:
 
 Question 1:
-A consistent naming convention is important in an enterprise environment because it improves clarity, accountability, and manageability. It allows administrators to easily identify users, reduces the risk of duplicate or ambiguous accounts, and supports automation and auditing processes. Consistent naming also aligns with security best practices and makes it easier to manage access controls across systems. For example abby.lloyd@novatechsolutions.co.za
+A consistent naming convention is important in an enterprise environment because it improves clarity, accountability, and manageability. It allows administrators to easily identify users, reduces the risk of duplicate or ambiguous accounts, and supports automation and auditing processes. Consistent naming also aligns with security best practices and makes it easier to manage access controls across systems. For example alex.mokoena@novatechsolutions.co.za
 
 Question 2:
 Three Security Groups will be created in Microsoft Entra ID, one for each department:
