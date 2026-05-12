@@ -15,3 +15,27 @@ Security Groups are the correct choice because they are specifically designed to
 Question 3:
 The principle of least privilege means that users are granted only the minimum level of access required to perform their job functions and nothing more. This principle reduces security risks by limiting the potential damage caused by user error, misuse, or compromised accounts.
 Before assigning any roles, access requirements must be carefully analysed so that each department receives only the permissions necessary for their responsibilities. For example, development users should not have access to financial resources, and finance users should not be able to modify infrastructure settings. Applying least privilege ensures a secure, controlled environment and aligns with industry security best practices.
+
+Task 2: Group Membership Allocation
+Users were assigned to groups based on their department and job role. Each user belongs to exactly one group to ensure clear access boundaries and to enforce the principle of least privilege.
+The group membership structure is as follows:
+
+
+proj-orion-dev
+
+Alex Mokone
+Jordan Nkosi
+
+
+proj-orion-ops
+
+Sam Patel
+Lebo Dlamini
+
+
+proj-orion-finance
+
+Fatima Khan
+Daniel Meyer
+
+This structure ensures that access permissions can be granted at the group level rather than individually, simplifying administration and reducing the risk of incorrect access assignments.
