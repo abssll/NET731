@@ -2,11 +2,11 @@ Virtual Machine Deployment
 
 A virtual machine was deployed in Microsoft Azure using a low-cost B-series VM size. The virtual machine was created from scratch within a dedicated resource group and deployed in the South Africa North region.
 
-- VM Name:** NET731-VM  
-- VM Size:** B2ts_v2  
-- Operating System:** Ubuntu Server 22.04 LTS  
-- Region:** South Africa North  
-- Resource Group:** NET731-RG  
+- VM Name: NET731-VM  
+- VM Size: B2ts_v2  
+- Operating System: Ubuntu Server 22.04 LTS  
+- Region: South Africa North  
+- Resource Group: NET731-RG  
 
 The Standard B1s VM size specified in the task brief was not available in the selected region under the Azure for Students subscription. As an alternative, the B2ts_v2 size was selected as the closest low-cost equivalent.
 
