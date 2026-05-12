@@ -10,5 +10,5 @@ A Virtual Network (VNet) named NET731-VNet was created in Microsoft Azure using 
 
 Task 3: Subnet Configuration
 
-Subnets were created within the virtual network to logically separate network traffic based on function. A frontend subnet was created to host public-facing resources such as web servers. Additional subnets will be created for backend application services and database resources to improve security, management, and traffic control.
+Three subnets were created within the virtual network to logically separate network traffic based on function. The frontend subnet (10.10.1.0/24) is intended for public-facing resources such as web servers. The backend subnet (10.10.2.0/24) hosts application services, while the database subnet (10.10.3.0/24) is reserved for database resources. This design improves security, scalability, and network management through logical segmentation.
 
