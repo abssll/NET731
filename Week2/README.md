@@ -30,3 +30,16 @@ The cloud solution was implemented using Microsoft Azure, which was clearly sele
 Network Security Group rules are documented with justification to explain how traffic is controlled between network segments. All deployed Azure resources remain active and accessible for assessment purposes. The GitHub repository containing the documentation is publicly accessible or shared with the lecturer prior to the submission deadline, in compliance with the module requirements.
 
 
+7.1 Address Space Design
+
+The virtual network was designed using the private IPv4 address range 10.10.0.0/16, which complies with RFC 1918 for private networks. Each subnet was allocated a /24 address range, providing approximately 251 usable IP addresses per subnet. This allows sufficient capacity for current requirements while also supporting scalability if additional resources or services are added in the futur
+
+
+7.2 Network Security Groups
+
+Network Security Groups were designed to follow a least-privilege security approach. Public access is restricted to the frontend subnet, while internal subnets are protected from direct internet access. Different security rules apply to each subnet based on its role, ensuring that only necessary traffic is allowed. Both inbound and outbound traffic considerations were taken into account to prevent unnecessary exposure and reduce the attack surface of internal resources
+
+
+7.3 GitHub and Documentation
+
+The GitHub repository was structured to clearly present the Week 2 practical work, with documentation explaining each task and design decision. The README file provides sufficient detail for someone unfamiliar with the project to understand the network design. Clear and descriptive commit messages were used to reflect progress throughout the practical
