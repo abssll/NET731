@@ -39,3 +39,12 @@ Fatima Khan
 Daniel Meyer
 
 This structure ensures that access permissions can be granted at the group level rather than individually, simplifying administration and reducing the risk of incorrect access assignments.
+
+Question 4:
+Assigned membership was selected when creating the security groups. Assigned membership allows administrators to manually control which users belong to each group, reducing the likelihood of unintended access. This approach is suitable for small to medium environments where user roles are stable and administrative oversight is required.
+Dynamic membership would be preferable in larger organisations where users frequently change roles or departments and group membership can be automatically managed using user attributes such as department or job title.
+
+Question 5:
+Group membership was verified by navigating to Microsoft Entra ID → Groups, opening a security group, and reviewing the Members tab. This verification step ensures that the correct users are assigned to each group and confirms that no user belongs to multiple groups. A screenshot of a group’s members list was captured as evidence.
+
+
