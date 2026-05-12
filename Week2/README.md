@@ -1,4 +1,4 @@
-<img width="692" height="245" alt="image" src="https://github.com/user-attachments/assets/2ee54679-6619-40a4-9d7d-f82f1aeb9dcb" />Task 1: Cloud Platform Selection
+ 1: Cloud Platform Selection
 
 Microsoft Azure was selected as the cloud platform for this practical because it provides robust virtual networking features such as Virtual Networks (VNets), subnets, and Network Security Groups (NSGs). Azure is widely used in enterprise environments and aligns with the learning objectives of the NET731 module.
 
