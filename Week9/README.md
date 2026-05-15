@@ -1,4 +1,4 @@
-# Azure Environment Technical Documentation
+<img width="592" height="223" alt="image" src="https://github.com/user-attachments/assets/c0d4dbe9-b875-409d-bc5e-79f7c91eef49" /># Azure Environment Technical Documentation
 
 ## Overview
 
@@ -301,3 +301,20 @@ By combining Azure Monitor metrics, alert rules, and Log Analytics, the environm
 
 This Azure environment integrates networking, compute, storage, monitoring, and cost management. Each resource plays a specific role and works together to form a secure, scalable, and cost-efficient cloud solution.
 ``
+## Section 4: Cost Summary
+
+### Total Spend and Projected Costs
+
+Azure Cost Management was used to monitor spending throughout the project.
+
+The total spend during the project period was minimal due to limited resource usage and short deployment durations. Most resources, particularly the virtual machine, were used only for testing and demonstration purposes.
+
+The projected monthly spend is expected to remain well below the $100 budget, especially since the virtual machine is not running continuously.
+
+---
+
+### Cost Breakdown by Resource Type
+
+Based on the cost analysis, the following resources contribute to overall spending:
+
+
