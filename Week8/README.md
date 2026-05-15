@@ -1,4 +1,3 @@
-<img width="681" height="729" alt="image" src="https://github.com/user-attachments/assets/c8cc05d3-d8a1-4bb7-a61c-6a86829e93f9" />
 Task 1: Azure Budget Alerts
 
 A budget was created in Azure Cost Management to monitor spending. The budget was set to $100 per month and configured with two alert thresholds at 80% and 100%.
