@@ -1,4 +1,4 @@
-<img width="592" height="223" alt="image" src="https://github.com/user-attachments/assets/c0d4dbe9-b875-409d-bc5e-79f7c91eef49" /># Azure Environment Technical Documentation
+# Azure Environment Technical Documentation
 
 ## Overview
 
