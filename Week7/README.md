@@ -9,3 +9,10 @@ The CPU usage remained low, indicating minimal workload on the virtual machine. 
 
 These metrics demonstrate how Azure Monitor provides real-time insights into system performance and resource utilisation.
 
+
+Task 1.1: Enable Monitoring on Virtual Machine
+
+Azure Monitor was accessed through the virtual machine’s monitoring section. Basic monitoring was already active, allowing the collection of performance data such as CPU usage and availability.
+
+The collected data is stored within Azure Monitor metrics and can be visualised directly in the Azure portal. If advanced monitoring is enabled, the data can also be stored in a Log Analytics workspace for deeper analysis.
+These metrics demonstrate how Azure Monitor provides real-time visibility into system behaviour and resource utilisation.
