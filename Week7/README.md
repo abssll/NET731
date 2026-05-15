@@ -42,3 +42,4 @@ Monitoring was enabled on multiple Azure resources using Azure Monitor. The prim
 Additionally, diagnostic settings were configured on the Network Security Group (NSG) and the Virtual Network (VNet). NSG logs included NetworkSecurityGroupEvent and NetworkSecurityGroupRuleCounter, which provide visibility into allowed and denied network traffic. VNet diagnostics captured network-level metrics and logs.
 
 All diagnostic data from the NSG and VNet was sent to a central Log Analytics Workspace (week7-law) for aggregation, storage, and analysis.
+The alert triggers when CPU usage exceeds 80% for 5 minutes. An email notification is sent to inform the administrator so that corrective action can be taken.
