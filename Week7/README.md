@@ -34,3 +34,11 @@ The network metrics are measured in bytes, typically displayed as kilobytes (KB)
 
 Yes, both Network In and Network Out can be displayed on the same chart by using the "Add metric" feature in Azure Monitor. This allows multiple metrics to be analysed together for comparison.
 The network traffic pattern shows low but consistent activity, with occasional spikes, particularly in outbound traffic. This indicates that the virtual machine is mostly idle but occasionally sends or receives data, which is expected in a lightly used environment.
+
+Task 3: Resources Monitoring
+
+Monitoring was enabled on multiple Azure resources using Azure Monitor. The primary resource monitored was the virtual machine (week3-vm), where metrics such as CPU usage and network activity were collected using Azure Monitor Metrics.
+
+Additionally, diagnostic settings were configured on the Network Security Group (NSG) and the Virtual Network (VNet). NSG logs included NetworkSecurityGroupEvent and NetworkSecurityGroupRuleCounter, which provide visibility into allowed and denied network traffic. VNet diagnostics captured network-level metrics and logs.
+
+All diagnostic data from the NSG and VNet was sent to a central Log Analytics Workspace (week7-law) for aggregation, storage, and analysis.
