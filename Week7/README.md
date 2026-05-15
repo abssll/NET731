@@ -43,3 +43,28 @@ Additionally, diagnostic settings were configured on the Network Security Group 
 
 All diagnostic data from the NSG and VNet was sent to a central Log Analytics Workspace (week7-law) for aggregation, storage, and analysis.
 The alert triggers when CPU usage exceeds 80% for 5 minutes. An email notification is sent to inform the administrator so that corrective action can be taken.
+
+
+Monitoring is critical in a cloud environment because it provides real-time visibility into system performance, availability, and security. It helps detect issues early, such as high CPU usage or unusual network traffic, allowing administrators to respond quickly and prevent system failures.
+
+In cloud environments, monitoring is highly automated and scalable, with built-in tools like Azure Monitor that can track resources across multiple regions and services. In contrast, on-premises monitoring is often limited to local infrastructure and requires manual setup, making it less flexible and harder to scale.
+
+
+A metric is a numerical value collected at regular intervals, such as CPU usage or network traffic, used for monitoring performance and trends over time.
+
+A log is a detailed record of events, such as system actions, errors, or security events, used for troubleshooting and auditing.
+
+Metrics are typically used for performance monitoring and alerts, while logs are used for in-depth analysis and investigating specific issues.
+
+
+If a virtual machine shows consistently high CPU usage at 2am, the first step would be to check scheduled tasks or background processes that may be running at that time. This could include system updates, backups, or automated scripts.
+
+Next, logs and metrics would be reviewed to identify abnormal activity, such as unexpected spikes or repeated processes. Security should also be considered, as high CPU usage could indicate malicious activity such as unauthorized access or attacks.
+
+Finally, performance monitoring tools would be used to determine if the workload is expected or if resources need to be scaled to handle demand.
+
+Monitoring data can be used to identify underutilized resources and reduce unnecessary costs. For example, if CPU and network usage remain consistently low, the virtual machine size can be reduced to a smaller, more cost-effective option.
+
+Monitoring can also detect inefficient workloads, excessive data transfer, or unused services, allowing administrators to optimize resource allocation.
+
+By analysing usage patterns over time, organizations can make informed decisions about scaling resources up or down, improving both performance and cost efficiency.
