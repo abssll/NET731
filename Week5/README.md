@@ -16,3 +16,7 @@ RBAC Scope Justification
 
 Assigning roles at the resource group scope ensures that permissions apply only to the resources within that specific group, reducing security risks and isolating access. If roles were assigned at the subscription level, users such as user-ops would gain access to all resources in the subscription, which could lead to excessive privileges and potential misuse. Therefore, resource group scope provides a balance between accessibility and security.
 
+
+Storage Account Name: net731storage
+Containers: internal-docs, public-assets
+Blob Endpoint: https://net731storage.blob.core.windows.net/
