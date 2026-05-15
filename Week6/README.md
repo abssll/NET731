@@ -39,3 +39,30 @@ Critical and high severity recommendations indicate vulnerabilities that could l
 
 Factors that determine severity include whether a resource is exposed to the internet, the sensitivity of the data, potential impact on security, and how easily the vulnerability can be exploited.
 
+
+Task 2: Security Posture Configuration
+
+Microsoft Defender for Cloud was reviewed to determine the security configuration of the Azure environment.
+
+The subscription was already onboarded to Microsoft Defender for Cloud, indicating that the environment is connected to Defender and capable of being monitored. However, no additional Defender plans or resource-specific protections were enabled due to limitations of the environment and the absence of active resources.
+
+As a result, the environment currently shows no assessed resources, no recommendations, and a secure score of N/A. This is expected in a minimal or lab-based environment where resources are limited.
+
+The configuration ensures that any future resources deployed in the environment will be automatically assessed by Microsoft Defender for Cloud.
+
+
+Security Status Before Configuration
+
+Before reviewing Defender settings, the environment showed no assessed resources and no active security recommendations. The secure score was not available.
+
+
+Security Status After Configuration
+
+After reviewing and confirming Defender onboarding, the environment remains unchanged in terms of recommendations due to the lack of active resources. However, it is now confirmed that the environment is properly onboarded and ready for security monitoring as resources are added.
+
+
+Importance of Security Onboarding
+
+Onboarding a subscription into Microsoft Defender for Cloud ensures that all resources are continuously monitored for security risks. Without onboarding, security tools cannot evaluate the environment, leaving potential vulnerabilities undetected.
+
+Even though no active recommendations are present in this environment, proper onboarding ensures that any future deployments will automatically benefit from security monitoring and recommendations.
