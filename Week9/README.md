@@ -172,5 +172,56 @@ Monitors and controls cloud spending.
 
 ## Conclusion
 
+
+Task 2:
+## Section 2: Security Configuration
+
+### Network Security Group (NSG) Rules
+
+A Network Security Group (NSG) was configured to control traffic to the virtual machine.
+
+#### Inbound Rules:
+- Allow SSH  
+  - Direction: Inbound  
+  - Port: 22  
+  - Protocol: TCP  
+  - Source: Any  
+  - Purpose: Allows secure remote access to the virtual machine  
+
+- Allow HTTP  
+  - Direction: Inbound  
+  - Port: 80  
+  - Protocol: TCP  
+  - Source: Any  
+  - Purpose: Allows web traffic to reach the virtual machine  
+
+#### Outbound Rules:
+- Allow Internet Traffic  
+  - Direction: Outbound  
+  - Destination: Internet  
+  - Purpose: Enables the virtual machine to access external services and updates  
+
+These rules ensure that only required traffic is permitted, improving security by reducing the attack surface.
+
+---
+
+### Identity and Access Management (RBAC)
+
+Role-Based Access Control (RBAC) was implemented to manage user permissions:
+
+- user-ops  
+  - Role: Contributor  
+  - Purpose: Manage and configure Azure resources  
+
+- user-audit  
+  - Role: Reader  
+  - Purpose: View resources without making changes  
+
+- user-data  
+  - Role: Storage Blob Data Contributor  
+  - Purpose: Manage storage data only  
+
+
+
 This Azure environment integrates networking, compute, storage, monitoring, and cost management. Each resource plays a specific role and works together to form a secure, scalable, and cost-efficient cloud solution.
 ``
