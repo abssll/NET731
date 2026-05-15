@@ -222,6 +222,82 @@ Role-Based Access Control (RBAC) was implemented to manage user permissions:
   - Purpose: Manage storage data only  
 
 
+## Section 3: Monitoring and Alerting
+
+### Metrics Monitored
+
+Azure Monitor was used to collect and analyse performance metrics for key resources.
+
+#### Virtual Machine (week3-vm)
+- Percentage CPU  
+  - Measures processor usage over time  
+  - Used to detect high workload or performance issues  
+
+- Network In Total  
+  - Measures incoming data traffic  
+  - Helps monitor communication into the VM  
+
+- Network Out Total  
+  - Measures outgoing data traffic  
+  - Helps identify data transfer and activity  
+
+These metrics provide insight into system performance and resource utilisation.
+
+---
+
+### Alert Rules Configured
+
+An alert rule was configured to monitor CPU usage on the virtual machine.
+
+- Alert Name: high-cpu-alert  
+- Condition: Percentage CPU > 80%  
+- Aggregation: Average  
+- Evaluation Frequency: Every 1 minute  
+- Lookback Period: 5 minutes  
+
+#### Action:
+- An email notification is sent via an action group when the alert is triggered  
+
+#### Purpose:
+This alert ensures that high CPU usage is detected quickly, allowing administrators to respond to potential performance issues.
+
+---
+
+### Log Analytics Workspace
+
+- Name: week7-law  
+- Region: South Africa North  
+
+#### Purpose:
+The Log Analytics Workspace is used to store and analyse diagnostic logs.
+
+#### Data Collected:
+- Network Security Group logs:
+  - NetworkSecurityGroupEvent  
+  - NetworkSecurityGroupRuleCounter  
+
+- Virtual Network logs  
+- Diagnostic data from monitored resources  
+
+These logs allow administrators to investigate traffic patterns and security events.
+
+---
+
+### Dashboards and Workbooks
+
+No custom dashboards or workbooks were created in this environment.
+
+Azure Monitor’s built-in metrics and visual graphs were used to analyse performance data.
+
+In a production environment, dashboards would typically be configured to provide real-time monitoring and visualisation of key metrics.
+
+---
+
+### Summary
+
+The monitoring setup provides visibility into system performance, network activity, and security events.
+
+By combining Azure Monitor metrics, alert rules, and Log Analytics, the environment supports proactive monitoring and quick response to potential issues.
 
 This Azure environment integrates networking, compute, storage, monitoring, and cost management. Each resource plays a specific role and works together to form a secure, scalable, and cost-efficient cloud solution.
 ``
