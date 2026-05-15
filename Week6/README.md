@@ -63,6 +63,58 @@ After reviewing and confirming Defender onboarding, the environment remains unch
 
 Importance of Security Onboarding
 
+Task 3: Overview 
+
+This practical focused on assessing and understanding the security posture of an Azure environment using Microsoft Defender for Cloud. The goal was to evaluate the current state of security, identify recommendations, and understand how security monitoring operates within a cloud environment.
+
 Onboarding a subscription into Microsoft Defender for Cloud ensures that all resources are continuously monitored for security risks. Without onboarding, security tools cannot evaluate the environment, leaving potential vulnerabilities undetected.
 
 Even though no active recommendations are present in this environment, proper onboarding ensures that any future deployments will automatically benefit from security monitoring and recommendations.
+
+Security Posture – Before Configuration
+
+At the start of the assessment, the environment had no active resources monitored by Microsoft Defender for Cloud.
+
+- Secure Score: N/A
+- Assessed Resources: 0
+- Security Recommendations: 0
+
+This indicates that the environment was not generating security insights due to the absence of active workloads.
+
+Defender for Cloud Configuration
+
+The Microsoft Defender for Cloud setup was reviewed to verify whether the Azure subscription was onboarded for security monitoring.
+
+The subscription was already onboarded, meaning Defender for Cloud is active and capable of assessing any resources deployed in the environment.
+
+Security Posture – After Configuration
+
+After reviewing the Defender setup, the environment remained unchanged in terms of recommendations and secure score.
+
+- Secure Score: N/A
+- Recommendations: None
+
+This is expected because there are no active resources currently being assessed. However, the environment is now confirmed to be properly configured for continuous security monitoring.
+
+Analysis of Security Recommendations
+
+No active recommendations were present in this environment. However, in a typical Azure deployment, common recommendations include:
+
+1. Enabling multi-factor authentication (MFA)  
+2. Securing management ports (SSH/RDP)  
+3. Restricting public access to storage accounts  
+
+These recommendations are important to reduce attack surfaces and protect sensitive data.
+
+Severity Levels in Defender for Cloud
+
+Microsoft Defender for Cloud assigns severity levels such as Critical, High, Medium, and Low based on the potential impact and likelihood of a security risk.
+
+High and critical vulnerabilities typically involve risks that could lead to data breaches, unauthorized access, or system compromise. Medium risks represent moderate security concerns, while low risks are usually best practice improvements.
+
+Factors influencing severity include whether a resource is exposed to the internet, the sensitivity of the data, and how easily the vulnerability can be exploited.
+
+This practical demonstrated the importance of understanding cloud security posture even in environments with minimal resources. It highlighted that security tools must be properly configured to provide visibility and monitoring.
+
+Even though no active recommendations were present, the exercise showed how Microsoft Defender for Cloud would be used in a real-world environment to continuously assess and improve security.
+
